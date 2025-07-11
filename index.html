@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>MANUTENÇÃO DE USUÁRIO DO SISTEMA INTERNO</legend>
+
+            <form>
+                <div class="linha">
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login">
+                </div>
+
+                <div class="linha">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+
+                <div class="linha">
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option>Ativo</option>
+                        <option>Inativo</option>
+                    </select>
+                </div>
+
+                <div class="linha">
+                    <label>Tipo</label>
+                    <input type="radio" id="tecnico" name="tipo">
+                    <label for="tecnico">Técnico</label>
+
+                    <input type="radio" id="professor" name="tipo">
+                    <label for="professor">Professor</label>
+
+                    <input type="radio" id="aluno" name="tipo">
+                    <label for="aluno">Aluno</label>
+                </div>
+
+                <div class="linha">
+                    <label for="data">Data da Criação</label>
+                    <input type="date" id="data" name="data">
+                </div>
+
+                <div class="linha">
+                    <label>Perfil</label>
+                    <input type="radio" id="convidado" name="perfil">
+                    <label for="convidado">Convidado</label>
+
+                    <input type="radio" id="admin" name="perfil">
+                    <label for="admin">Administrador</label>
+                </div>
+
+                <div class="linha">
+                    <label for="comentarios">Comentários</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+
+                <div class="linha checkbox-tipo">
+                    <label>Tipo</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" id="compras"> Compras</label>
+                        <label><input type="checkbox" id="biblioteca"> Biblioteca</label>
+                        <label><input type="checkbox" id="academico"> Acadêmico</label>
+                        <label><input type="checkbox" id="documentacao"> Documentação</label>
+                        <label><input type="checkbox" id="rh"> Recursos Humanos</label>
+                    </div>
+                </div>
+
+
+                <div class="botoes">
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Excluir</button>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
